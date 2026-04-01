@@ -6,7 +6,7 @@ By reconstructing attack timelines from raw telemetry and packet captures, these
 
 ## 📊 Case Studies
 
-### 1. [WebStrike: Web Application Compromise & Exfiltration](insert_link)
+### 1. [WebStrike: Web Application Compromise & Exfiltration](./case-studies/01-webstrike/README.md)
 * **Platform:** CyberDefenders
 * **Tools Used:** Wireshark
 * **Highlights:** Investigated a web server breach by analyzing HTTP/TCP streams. Identified an initial access bypass using a double-extension file upload (`.jpg.php`), traced the execution of a reverse shell over port 8080, and documented the subsequent exfiltration of system files (`/etc/passwd`) via outbound `curl` POST requests. 
