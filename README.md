@@ -11,9 +11,14 @@ By reconstructing attack timelines from raw telemetry and packet captures, these
 * **Tools Used:** Wireshark
 * **Highlights:** Investigated a web server breach by analyzing HTTP/TCP streams. Identified an initial access bypass using a double-extension file upload (`.jpg.php`), traced the execution of a reverse shell over port 8080, and documented the subsequent exfiltration of system files (`/etc/passwd`) via outbound `curl` POST requests. 
 
+### 2. [Oski Lab: Stealc Malware Alert](./case-studies/02-Oski/README.md)
+* **Platform:** CyberDefenders
+* **Tools Used:** VirusTotal, Any.run
+* **Highlights:** Investigated a Stealc/Oski malware infection originating from a malicious PPT attachment. Utilized threat intelligence platforms to trace C2 communication, extract the RC4 decryption key, and map credential harvesting behavior to MITRE ATT&CK T1555. Analyzed evasion tactics, including timed self-deletion commands and DLL removal in the ProgramData directory.
+
 ---
 
-**Last Updated:** 1-Apr-26
+**Last Updated:** 24-Apr-26
 
 ---
 
