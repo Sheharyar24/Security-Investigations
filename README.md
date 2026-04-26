@@ -16,9 +16,14 @@ By reconstructing attack timelines from raw telemetry and packet captures, these
 * **Tools Used:** VirusTotal, Any.run
 * **Highlights:** Investigated a Stealc/Oski malware infection originating from a malicious PPT attachment. Utilized threat intelligence platforms to trace C2 communication, extract the RC4 decryption key, and map credential harvesting behavior to MITRE ATT&CK T1555. Analyzed evasion tactics, including timed self-deletion commands and DLL removal in the ProgramData directory.
 
+### 3. [Poisoned Credentials: LLMNR/NBT-NS Spoofing](./case-studies/03-PoisonedCredentials/README.md)
+* **Platform:** CyberDefenders
+* **Tools Used:** Wireshark 
+* **Highlights:** Investigated an Active Directory credential harvesting attack by analyzing NBT-NS and LLMNR broadcast traffic. Identified a rogue entity responding to mistyped queries, tracked the compromise of a domain user account (`janesmith`), and mapped the attacker's lateral movement via SMB2 to a specific targeted workstation.
+
 ---
 
-**Last Updated:** 24-Apr-26
+**Last Updated:** 26-Apr-26
 
 ---
 
